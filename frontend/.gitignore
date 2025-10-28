@@ -1,43 +1,27 @@
-# ===================================
-# Python / Flask
-# ===================================
+# ------------------------------------
+# 🧠 Python (Flask Backend)
+# ------------------------------------
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-instance/
 *.db
-*.sqlite3
+instance/
+backend/uploads/
 venv/
 .env
-
-# ===================================
-# Node / React
-# ===================================
-node_modules/
-dist/
-dist-ssr/
-*.local
-.env
-
-# ===================================
-# Logs
-# ===================================
-logs/
+*.sqlite3
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# ===================================
-# System Files
-# ===================================
-.DS_Store
-Thumbs.db
+# Ignore model checkpoints or large data files
+*.pt
+*.h5
+*.pkl
+*.joblib
+*.npy
+*.npz
 
-# ===================================
-# Editor Files
-# ===================================
+# Ignore IDE-specific files
 .vscode/
 .idea/
 *.suo
@@ -46,16 +30,49 @@ Thumbs.db
 *.sln
 *.sw?
 
-# ===================================
-# Build / Temp / Cache
-# ===================================
-.cache/
-temp/
-*.bak
-*.tmp
-*.zip
+# ------------------------------------
+# ⚛️ Node / React (Frontend)
+# ------------------------------------
+node_modules/
+dist/
+build/
+dist-ssr/
+*.local
 
-# ===================================
-# Project Uploads (exclude images)
-# ===================================
-backend/uploads/
+# React cache & debug logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------
+# ⚙️ OS Generated Files
+# ------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------------
+# 🗂️ Archives & Temporary Files
+# ------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# ------------------------------------
+# 🧩 Environment & Config
+# ------------------------------------
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ------------------------------------
+# 🧰 Editor Directories
+# ------------------------------------
+.vscode/*
+!.vscode/extensions.json
